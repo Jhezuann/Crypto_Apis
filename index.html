@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Prices</title>
+    <!-- Enlazamos el archivo CSS para los estilos -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Cargamos Chart.js para mostrar los gráficos -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <!-- Título de la página -->
+            <h1>Crypto APIs</h1>
+            <div class="search-bar">
+                <!-- Campo de búsqueda para buscar criptomonedas -->
+                <input type="text" id="crypto-search" placeholder="Search for a cryptocurrency (e.g., BTC)">
+                <button onclick="searchCrypto()">Search</button>
+            </div>
+        </header>
+        
+        <main>
+            <!-- Título de la sección de criptomonedas populares -->
+            <h2>Popular Cryptocurrencies</h2>
+            <div id="crypto-list" class="crypto-grid">
+                <!-- Aquí se mostrarán las criptomonedas populares -->
+            </div>
+        </main>
+    </div>
+    <!-- Enlazamos el archivo JavaScript que manejará la lógica -->
+    <script src="js/app.js"></script>
+</body>
+</html>
